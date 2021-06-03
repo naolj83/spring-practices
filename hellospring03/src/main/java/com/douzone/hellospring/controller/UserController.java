@@ -37,7 +37,7 @@ public class UserController {
 	@RequestMapping("/update")
 	public String update(@RequestParam("n") String name) {	//@RequestParam(vlue="n", required=true)
 		/**
-		 * 만일 n이라는 이름의 파라미터가 없는 경우 
+		 * 만일 n이라는 이름의 파라미터가 없는 경우(required=true)
 		 * 400 Bad Request 에러가 발생한다.
 		 */
 		System.out.println(name);
