@@ -7,13 +7,12 @@
 		<artifactId>spring-practices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>emaillist03</artifactId>
+	<artifactId>guestbook03</artifactId>
 	<packaging>war</packaging>
 
 	<properties>
 		<org.springframework-version>4.3.4.RELEASE</org.springframework-version>
 	</properties>
-
 
 	<dependencies>
 		<!-- Spring Context(Container) -->
@@ -37,6 +36,13 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 
+		<!-- jstl -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
 		<!-- MariaDB JDBC Driver -->
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>
@@ -44,12 +50,6 @@
 			<version>2.7.2</version>
 		</dependency>
 
-		<!-- jstl -->
-		<dependency>
-			<groupId>jstl</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
 
 		<!-- Servlet -->
 		<dependency>
@@ -65,12 +65,10 @@
 			<scope>provided</scope>
 		</dependency>
 
-
-
 	</dependencies>
 
 	<build>
-		<finalName>emaillist03</finalName>
+		<finalName>guestbook03</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -87,7 +85,7 @@
 				<artifactId>tomcat-maven-plugin</artifactId>
 				<configuration>
 					<url>http://192.168.80.131:8080/manager/text</url>
-					<path>/emaillist03</path>
+					<path>/guestbook03</path>
 					<username>admin</username>
 					<password>manager</password>
 				</configuration>
@@ -95,6 +93,5 @@
 
 		</plugins>
 	</build>
-
 
 </project>
