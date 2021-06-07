@@ -12,7 +12,7 @@ public class MyInterceptor01 implements HandlerInterceptor {
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		System.out.println("MyInterceptor01.preHandle(...) called");
-		return true;
+		return true;	// false면 post, after 안가고 돌아옴 pre만
 	}
 
 	@Override
