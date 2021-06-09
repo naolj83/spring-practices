@@ -51,5 +51,6 @@
  		<module>logex</module>
  		<module>aopsilmpe</module>
  		<module>aoptest</module>
+ 		<module>fileupload</module>
  	</modules>
 </project>
