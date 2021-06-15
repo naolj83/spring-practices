@@ -6,10 +6,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>하이 main</h1>
-	<h1>${n }</h1>
-	<h1>${b }</h1>
-	<h1>${c }</h1>
-	
+	<h1>Hello World2</h1>
 </body>
 </html>

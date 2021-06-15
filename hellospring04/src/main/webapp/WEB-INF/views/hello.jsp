@@ -6,6 +6,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>하이</h1>
+	<h1>Hello World</h1>
 </body>
 </html>
